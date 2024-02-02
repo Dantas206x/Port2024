@@ -3,9 +3,9 @@ import gitb from "./assets/gitb.png"
 
 const Footer = () => {
     return (<div >
-        <div className="  gap-20 p-10 items-center text-center  flex-wrap text-black border-t-2 border-white text-white bg-tertiary ">
+        <div className="gap-20 p-10 items-center text-center  flex-wrap text-black border-t-2 border-white text-white bg-tertiary ">
             <div className="p-2">
-                <a href="#home" className="tony p-8 text-4xl">
+                <a href="#" className="tony p-8 text-4xl">
                     TonyDEV
                 </a>
                 <p className="p-4  font-semibold">
