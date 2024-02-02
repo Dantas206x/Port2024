@@ -12,7 +12,7 @@ import whats from "./componentes/assets/whats.png"
 import Projetos from './componentes/Projetos'
 import { useState, useEffect } from 'react'
 import { BrowserRouter } from 'react-router-dom'
-import Footer from './componentes/footer'
+import Footer from "./componentes/Footer";
 
 
 
