@@ -42,7 +42,7 @@ const Projetos = () => {
                   <div className="bg-black w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
                     <img
                       src={
-                        "https://portifolio-web-antonio.netlify.app/assets/github-3b4e1609.png"
+                        "https://www.svgrepo.com/show/512317/github-142.svg"
                       }
                       alt="github_icon"
                     />
