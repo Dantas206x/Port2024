@@ -30,17 +30,17 @@ const Projetos = () => {
           {projetosParaExibir.map((projeto, index) => (
             <div
               key={index}
-              className="p-5 rounded-2xl sm:w-[360px] w-full shadow-xl border-solid border-2 border-violet-600"
+              className="p-5 rounded-2xl sm:w-[360px] w-full shadow-xl border-solid  transform transition-transform hover:scale-105"
             >
               {/* Seu conteúdo do projeto aqui */}
-              <div className="relative w-full h-[230px] border-solid border-4 rounded-3xl border-black">
+              <div className="relative w-full h-[230px] border-solid border-4 rounded-3xl border-black transform ">
                 <img
                   src={projeto.image}
                   alt={`project_image_${index}`}
-                  className="w-full h-full object-cover rounded-2xl transform transition-transform hover:scale-125"
+                  className="w-full h-full object-cover rounded-2xl "
                 />
                 <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-                  <div className="bg-black w-10 h-10 rounded-full flex justify-center items-center cursor-pointer transform transition-transform hover:scale-125">
+                  <div className="bg-black w-10 h-10 rounded-full flex justify-center items-center cursor-pointer transform transition-transform hover:scale-125  ">
                     <img
                       src={
                         gitb
