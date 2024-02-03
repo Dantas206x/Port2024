@@ -12,7 +12,7 @@ const Exp = () => {
                 <div className="circle3"></div>
         <section className="sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto relative z-0 ">
             <div>
-                <p className="sm:text-[18px] text-[14px] uppercase tracking-wider text-center">
+                <p className="sm:text-[18px] text-[16px] uppercase tracking-wider text-center">
                 O que eu fiz até agora
                 </p>
                 <h2 className="text-black font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center">
@@ -43,16 +43,16 @@ const Exp = () => {
                                             </p>
                                         </div>
                                             <ul>
-                                                <li className="text-black-100 text-[14px] pl-1 tracking-wider">Responsável por dar suporte às soluções implementadas em uma empresa, garantindo o seu funcionamento e resolvendo eventuais problemas.
+                                                <li className="text-black-100 text-[16px] pl-1 tracking-wider">Responsável por dar suporte às soluções implementadas em uma empresa, garantindo o seu funcionamento e resolvendo eventuais problemas.
 
                                                 </li>
-                                                <li className="text-black-100 text-[14px] pl-1 tracking-wider">Colaborar em conjunto a uma equipe interna, para ilustrar novas ideias e a viabilidade de projetos. 
+                                                <li className="text-black-100 text-[16px] pl-1 tracking-wider">Colaborar em conjunto a uma equipe interna, para ilustrar novas ideias e a viabilidade de projetos. 
                                                     
                                                 </li>
-                                                <li className="text-black-100 text-[14px] pl-1 tracking-wider">Certificar de que o design está responsivo e testar compatibilidade entre navegadores.
+                                                <li className="text-black-100 text-[16px] pl-1 tracking-wider">Certificar de que o design está responsivo e testar compatibilidade entre navegadores.
                                                     
                                                 </li>
-                                                <li className="text-black-100 text-[14px] pl-1 tracking-wider">Participar de Code Reviews e providenciar o feedback para os desenvolvedores.
+                                                <li className="text-black-100 text-[16px] pl-1 tracking-wider">Participar de Code Reviews e providenciar o feedback para os desenvolvedores.
                                                     
                                                 </li>
                                             </ul>
@@ -85,16 +85,16 @@ const Exp = () => {
                                             </p>
                                         </div>
                                             <ul>
-                                                <li className="text-black-100 text-[14px] pl-1 tracking-wider">responsável por fornecer suporte técnico aos usuários de sistemas, hardware e software.
+                                                <li className="text-black-100 text-[16px] pl-1 tracking-wider">responsável por fornecer suporte técnico aos usuários de sistemas, hardware e software.
 
                                                 </li>
-                                                <li className="text-black-100 text-[14px] pl-1 tracking-wider">identificar e resolver problemas, instalar softwares e atualizações, além de prestar atendimento aos usuários por telefone, chat ou e-mail. 
+                                                <li className="text-black-100 text-[16px] pl-1 tracking-wider">identificar e resolver problemas, instalar softwares e atualizações, além de prestar atendimento aos usuários por telefone, chat ou e-mail. 
                                                     
                                                 </li>
-                                                <li className="text-black-100 text-[14px] pl-1 tracking-wider">Implementing responsive design and ensuring cross-browser compatibility.
+                                                <li className="text-black-100 text-[16px] pl-1 tracking-wider">Implementing responsive design and ensuring cross-browser compatibility.
                                                     
                                                 </li>
-                                                <li className="text-black-100 text-[14px] pl-1 tracking-wider">Responsável pela manutenção preventiva de equipamentos e pela criação de documentação de suporte e procedimentos técnicos.
+                                                <li className="text-black-100 text-[16px] pl-1 tracking-wider">Responsável pela manutenção preventiva de equipamentos e pela criação de documentação de suporte e procedimentos técnicos.
                                                     
                                                 </li>
                                             </ul>
