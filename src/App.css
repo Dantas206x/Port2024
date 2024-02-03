@@ -632,5 +632,5 @@
 }
 html {
   scroll-behavior: smooth;
-  /*Adds smooth scrolling instead of snapping to element*/
+  height: 100vh;
 }

@@ -6,6 +6,9 @@ import variacao from "../assets/misc/variacao.jpg"
 import protifas from "../assets/misc/protifas.jpg"
 import dockeer from "../assets/misc/dockeer.png"
 import locad from "../assets/misc/locad.png"
+import drum from "../assets/misc/drum.png"
+import quote from '../assets/misc/quote.png'
+import mark from "../assets/misc/mark.png"
 
 
 
@@ -50,6 +53,70 @@ const projetos = [
       ],
       image: carrent,
       source_code_link: "https://github.com/Dantas206x/projeto-after",
+    },
+
+    {
+      name: "FCC-drum-machine",
+      description:
+        "Desafio provienciado pela FCC, com o proposito de criar um painel de musica funcional.",
+      tags: [
+        {
+          name: "JavaScript",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "HTML",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: drum,
+      source_code_link: "https://github.com/Dantas206x/FCC-drum-machine",
+    },
+    {
+      name: "FCC-Random-Quote-Machine",
+      description:
+        "Desafio do FFC, que utiliza de uma api que seleciona um json randomicamente que deve ser exibido frases e seus autores.",
+      tags: [
+        {
+          name: "JavaScript",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "HTML",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: quote,
+      source_code_link: "https://github.com/Dantas206x/FCC-Random-Quote-Machine",
+    },
+    {
+      name: "FCC-Markdown",
+      description:
+        "projeto de criação de markdown em javascript e html, teste providenciado por freecodecamp",
+      tags: [
+        {
+          name: "JavaScript",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "HTML",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: mark,
+      source_code_link: "https://github.com/Dantas206x/FCC-Markdown",
     },
     {
       name: "Calculadora de Peso",

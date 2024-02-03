@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import projetos from "./constantes/index.js";
 import { motion } from "framer-motion";
+import gitb from "./assets/gitb.png"
 
 const Projetos = () => {
   const [mostrarMais, setMostrarMais] = useState(false);
@@ -14,7 +15,7 @@ const Projetos = () => {
     <div id="projetos">
       <div className="text-black card">
         <div className="text-center">
-          <p className="sm:text-[18px] text-[14px] text-black uppercase tracking-wider">
+          <p className="sm:text-[18px] text-[14px] text-black uppercase tracking-wider ">
             Meus trabalhos
           </p>
           <h2 className="text-black font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
@@ -29,10 +30,10 @@ const Projetos = () => {
           {projetosParaExibir.map((projeto, index) => (
             <div
               key={index}
-              className="p-5 rounded-2xl sm:w-[360px] w-full shadow-xl bg-white-100"
+              className="p-5 rounded-2xl sm:w-[360px] w-full shadow-xl"
             >
               {/* Seu conteúdo do projeto aqui */}
-              <div className="relative w-full h-[230px]">
+              <div className="relative w-full h-[230px] ">
                 <img
                   src={projeto.image}
                   alt={`project_image_${index}`}
@@ -42,7 +43,7 @@ const Projetos = () => {
                   <div className="bg-black w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
                     <img
                       src={
-                        "https://portifolio-web-antonio.netlify.app/assets/github-3b4e1609.png"
+                        gitb
                       }
                       alt="github_icon"
                     />
@@ -53,19 +54,21 @@ const Projetos = () => {
                 <h3 className="text-black font-bold text-[24px]">
                   {projeto.name}
                 </h3>
-                <p className="mt-2 text-hite text-[14px]">
+                <p className="mt-2 text-black text-md font-semibold">
                   {projeto.description}
                 </p>
               </div>
-              <div className="mt-4 flex flex-wrap gap-2">
+              <div className="mt-4 flex flex-wrap gap-2 font-bold bg-black-100 rounded-lg items-center justify-center">
+                <div className=" flex gap-4 p-2 underline underline-offset-1">
                 {projeto.tags.map((tag, tagIndex) => (
                   <p
                     key={`${projeto.name}-${tagIndex}`}
-                    className={`text-[14px] ${tag.color}`}
+                    className={`text-[14px] transform transition-transform hover:scale-125 ${tag.color}`}
                   >
                     #{tag.name}
                   </p>
                 ))}
+                </div>
               </div>
             </div>
           ))}
