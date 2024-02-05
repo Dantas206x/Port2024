@@ -29,9 +29,34 @@ const Home = () => {
         <div className="text-5xl">Eu sou &nbsp;
           <div className=" inline-flex ">
             <div className=" text-orange-500 font-"><div>
-              <button onClick={toggleAudio}>
-                {isPlaying ? <img src={Lambda} className='w-10 h-10'/> : 'λ'}
-              </button>
+              <motion.button
+                onClick={toggleAudio}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                {isPlaying ? (
+                  <motion.img
+                    src={Lambda}
+                    alt="Lambda"
+                    className="w-10 h-10"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 3.5 }}
+                  />
+                ) : (
+                  <motion.span
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    λ
+                  </motion.span>
+                )}
+              </motion.button>
               <audio ref={audioRef} src={valve} />
             </div></div>
             <div className=" font-extrabold">
