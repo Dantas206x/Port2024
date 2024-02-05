@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import projetos from "./constantes/index.js";
 import { motion } from "framer-motion";
-import gitb from "./assets/gitb.png"
+
 
 const Projetos = () => {
   const [mostrarMais, setMostrarMais] = useState(false);
@@ -33,18 +33,16 @@ const Projetos = () => {
               className="p-5 rounded-2xl sm:w-[360px] w-full shadow-xl border-solid  transform transition-transform hover:scale-105"
             >
               {/* Seu conteúdo do projeto aqui */}
-              <div className="relative w-full h-[230px] border-solid border-4 rounded-3xl border-black transform ">
+              <div className="relative w-full h-[230px] rounded-3xl transform ">
                 <img
                   src={projeto.image}
                   alt={`project_image_${index}`}
                   className="w-full h-full object-cover rounded-2xl "
                 />
                 <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-                  <div className="bg-black w-10 h-10 rounded-full flex justify-center items-center cursor-pointer transform transition-transform hover:scale-125  ">
+                  <div className=" w-10 h-10 rounded-full flex justify-center items-center cursor-pointer transform transition-transform hover:scale-125  ">
                     <img
-                      src={
-                        gitb
-                      }
+                      src="https://www.svgrepo.com/show/512317/github-142.svg"
                       alt="github_icon"
                     />
                   </div>

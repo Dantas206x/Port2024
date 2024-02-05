@@ -21,7 +21,7 @@ const Sobre = () => {
             </div>
           </div>
           <div>
-            <img src={tony} className="rounded-full w-[400px] max-h-[400px]" alt="Tony's photo" />
+            <img src={tony} className="rounded-full w-[400px] max-h-[400px] " alt="Tony's photo" />
           </div>
 
 

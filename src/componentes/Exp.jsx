@@ -65,15 +65,15 @@ const Exp = () => {
 
                                 </div>
                                 <div className="vertical-timeline-element ">
-                                    <span className="vertical-timeline-element-icon bounce-in bg-neutral-100  shadow-xl">
+                                    <span className="vertical-timeline-element-icon bounce-in bg-neutral-100  shadow-xl  5">
                                         <div className="flex justify-center items-center w-full h-full">
-                                            <div className="rounded-full overflow-hidden w-[90%] h-[90%]">
+                                            <div className="rounded-full overflow-hidden w-[90%] h-[90%] ">
                                                 <img src="https://media.licdn.com/dms/image/D4D0BAQHKsH5LtoEWvg/company-logo_200_200/0/1696421129275?e=1715212800&v=beta&t=wgFwlRliySuPZN0DTdACOrFAui6HMbGalhsw6SAFrF0" />
 
                                             </div>
                                         </div>
                                     </span>
-                                    <div className="vertical-timeline-element-content bounce-intone bg-neutral-100  shadow-xl">
+                                    <div className="vertical-timeline-element-content bounce-intone bg-neutral-100  shadow-xl ">
                                      
                                         <div className="vertical-timeline-element-content-arrow"></div>
                                         <div>
