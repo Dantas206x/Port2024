@@ -1,7 +1,24 @@
 import comp from './assets/comp.png'
 import { motion } from 'framer-motion';
+import React from 'react';
+import { useState, useRef } from 'react';
+import valve from "./assets/valve.mp3"
+import lambda from "./assets/lambda.png"
+
 
 const Home = () => {
+  const audioRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const toggleAudio = () => {
+    audioRef.current.currentTime = 0; // Reinicia a reprodução do início
+    if (isPlaying) {
+      audioRef.current.pause();
+    } else {
+      audioRef.current.play();
+    }
+    setIsPlaying(!isPlaying);
+  };
   return (
     <div className="flex text-white items-center  justify-evenly  min-h-[100vh] flex-col md:flex-row  pt-40 bg-tertiary">
       {/* Seção para dispositivos móveis */}
@@ -11,7 +28,12 @@ const Home = () => {
         </div>
         <div className="text-5xl">Eu sou &nbsp;
           <div className=" inline-flex ">
-            <div className=" text-orange-500 font-">λ</div>
+            <div className=" text-orange-500 font-"><div>
+              <button onClick={toggleAudio}>
+                {isPlaying ? <img src={lambda} className='w-10 h-10'/> : 'λ'}
+              </button>
+              <audio ref={audioRef} src={valve} />
+            </div></div>
             <div className=" font-extrabold">
               ntonio</div>
 
@@ -22,17 +44,17 @@ const Home = () => {
 
       {/* Seção para computadores */}
 
-      <div className=" bg-violet-500 rounded-full md:h-[400px] md:w-[400px] h-[250px] w-[250px] ">
+      <div className=" bg-violet-500 rounded-full md:h-[400px] md:w-[400px] h-[250px] w-[250px] transform transition-transform hover:scale-105">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <img src={comp} className='comp1' />
-          <div className='relative flex justify-center'>
+          <img src={comp} className='comp1 ' />
+          <div className='relative flex justify-center '>
             <div className='shadow'></div>
           </div>
-          </motion.div>
+        </motion.div>
       </div>
 
     </div>
