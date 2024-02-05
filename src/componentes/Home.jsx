@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import { useState, useRef } from 'react';
 import valve from "./assets/valve.mp3"
-import lambda from "./assets/lambda.png"
+import Lambda from "./assets/Lambda.png"
 
 
 const Home = () => {
@@ -30,7 +30,7 @@ const Home = () => {
           <div className=" inline-flex ">
             <div className=" text-orange-500 font-"><div>
               <button onClick={toggleAudio}>
-                {isPlaying ? <img src={lambda} className='w-10 h-10'/> : 'λ'}
+                {isPlaying ? <img src={Lambda} className='w-10 h-10'/> : 'λ'}
               </button>
               <audio ref={audioRef} src={valve} />
             </div></div>
